@@ -76,12 +76,12 @@ aicommits --generate <i> # or -g <i>
 
 > Warning: this uses more tokens, meaning it costs more.
 
-#### Generating Conventional Commits
+#### Generating Handsome Commits
 
-If you'd like to generate [Conventional Commits](https://conventionalcommits.org/), you can use the `--type` flag followed by `conventional`. This will prompt `aicommits` to format the commit message according to the Conventional Commits specification:
+If you'd like to generate handsome commits, you can use the `--type` flag followed by `handsome`. This will prompt `aicommits` to format the commit message according to the Conventional Commits specification:
 
 ```sh
-aicommits --type conventional # or -t conventional
+aicommits --type handsome # or -t handsome
 ```
 
 This feature can be useful if your project follows the Conventional Commits standard or if you're using tools that rely on this commit format.
@@ -227,7 +227,7 @@ aicommits config set max-length=100
 
 Default: `""` (Empty string)
 
-The type of commit message to generate. Set this to "conventional" to generate commit messages that follow the Conventional Commits specification:
+The type of commit message to generate. Set this to "handsome" to generate commit messages that follow the Conventional Commits specification:
 
 ```sh
 aicommits config set type=conventional
