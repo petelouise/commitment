@@ -3,7 +3,7 @@ import type { CommitType } from './config.js';
 const commitTypeFormats: Record<CommitType, string> = {
 	'': '<commit message>',
 	conventional: '<type>(<optional scope>): <commit message>',
-	handsome: '<type>(<filename>): <commit message>',
+	handsome: '<type>(<filename without directory>): <commit message>',
 };
 const specifyCommitFormat = (type: CommitType) =>
 	`The output response must be in format:\n${commitTypeFormats[type]}`;
