@@ -1,12 +1,12 @@
-import fs from 'fs/promises';
-import path from 'path';
-import os from 'os';
-import ini from 'ini';
 import type { TiktokenModel } from '@dqbd/tiktoken';
-import { fileExists } from './fs.js';
+import fs from 'fs/promises';
+import ini from 'ini';
+import os from 'os';
+import path from 'path';
 import { KnownError } from './error.js';
+import { fileExists } from './fs.js';
 
-const commitTypes = ['', 'conventional'] as const;
+const commitTypes = ['', 'conventional', 'handsome'] as const;
 
 export type CommitType = (typeof commitTypes)[number];
 
